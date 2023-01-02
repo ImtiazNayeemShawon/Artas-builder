@@ -1,0 +1,196 @@
+
+@import "../../styles/mixin.scss";
+
+.Header {
+  top: 0;
+  z-index: 4;
+  padding: 20px 10px;
+  @include view-mobile {
+    padding: 0px;
+  }   
+  @include view-mobile {
+      background-color: white;
+  }   
+}
+
+.stickyHeader {
+  top: 0;
+  position: fixed;
+  z-index: 300;
+  padding: 20px 10px;
+  background-color: white;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  width: 100%;
+  @include min {
+    padding: 0px;
+    background-color: white;
+
+  }    
+}
+.HeaderContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  @include min {
+    height: 45px;
+  }   
+}
+.logo {
+  left: 20px;
+  top: 8px;
+  position: absolute;
+  z-index: 5;
+  width: 100px;
+  height: 100px;
+  -webkit-animation:spin 16s linear infinite;
+  -moz-animation:spin 16s linear infinite;
+  animation:spin 16s linear infinite;
+  animation-delay: 8s;
+  @include min {
+    -webkit-animation: none;
+    -moz-animation:none;
+    animation:none;
+    width: 120px;
+    left: 6px;
+    width: 90px;
+    height: 90px;
+    top: 4px;
+  }   
+}
+.logoSticky {
+  left: 20px;
+  top: 4px;
+  position: absolute;
+  z-index: 5;
+  width: 80px;
+  height: 80px;
+  -webkit-animation:spin 16s linear infinite;
+  -moz-animation:spin 16s linear infinite;
+  animation:spin 16s linear infinite;
+  animation-delay: 8s;
+  @include sx{
+    width: 90px;
+    height: 90px;
+  }
+  @include min {
+    display: inline;
+    -webkit-animation: none;
+    -moz-animation:none; 
+    animation:none;
+    width: 120px;
+    left: 6px;
+    height: 35px;
+    top: 4px;
+  }   
+}
+@-moz-keyframes spin { 
+  100% { -moz-transform: rotateY(180deg); } 
+}
+@-webkit-keyframes spin { 
+  100% { -webkit-transform: rotateY(180deg); } 
+}
+@keyframes spin { 
+  100% { 
+      -webkit-transform: rotateY(360deg); 
+      transform:rotateY(360deg); 
+  } 
+}
+.logoTextSticky {
+  top: 0px;
+  left: 130px;
+  width: 110px;
+  height: 90px;
+  position: absolute;
+  @include big {
+    width: 100px;
+    height: 80px;
+  }
+  @include min {
+    left: 100px;
+    width: 80px;
+    height: 40px;
+  }
+  @include mindi {
+    left: 100px;
+    width: 90px;
+    height: 45px;
+  }
+  @include view-mindi-h {
+    left: 110px;
+}
+}
+.logoText {
+  top: 0px;
+  left: 130px;
+  width: 110px;
+  height: 90px;
+  position: absolute;
+  @include big {
+    width: 130px;
+    height: 110px;
+  }
+  @include sx{
+  }
+  @include min {
+    width: 100px;
+    height: 45px;
+    left: 90px;
+  }
+  @include mindi {
+    left: 73px;
+    width: 90px;
+    height: 66px;
+  }
+  @include view-mindi-h {
+    left: 110px;
+}
+
+}
+.content {
+  z-index: 20;
+  display: flex;
+  justify-content: right;
+  width: 870px;
+  @include big {
+    width: 770px;
+  }
+  @include sx{
+    width: 650px;
+  }
+  @include min {
+    width: 500px;
+  }
+  @include mindi {
+    width: 350px;
+  }
+  @include view-mobile {
+    width: 100px;
+  }  
+
+}
+.language {
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  margin-right: 40px;
+  height: 47px;
+  @include big {
+    height: 36px;
+    width: 90px;
+    margin-left: 40px;
+  }
+  @include view-mobile {
+    width: 80px;
+    margin-right: 10px;
+  }   
+}
+.menuMobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px !important;
+  gap: 8px;
+  height: 40px;
+}

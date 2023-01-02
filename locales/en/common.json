@@ -1,0 +1,32 @@
+{
+    "greeting": "Hallo Welt",
+    "menu": "menu",
+    "realization": "REALIZATIONS",
+    "testimonials": "TESTIMONIALS",
+    "career": "CAREER",
+    "about_us": "ABOUT US",
+    "services": "SERVICES",
+    "contact": "CONTACT",
+    "sv": "Swedish",
+    "en": "English",
+    "lang": "Choose language:",
+    "contact_us": "contact with us",
+    "main_header1": "Luxury House",
+    "main_header2": "Building",
+    "top_header": "CONSTRUCTION AND RENOVATION",
+    "bottom_header": "has never been so simple",
+    "services_Items": {
+        "supplay_works": "SUPPLY WORKS",
+        "drainage_works": "DRAINAGE WORKS", 
+        "rendering_works": "RENDERING WORKS",
+        "house_foundations": "HOUSE FOUNDATIONS",
+        "mashines_rental": "MASHINES RENTAL",
+        "groundworks": "GROUNDWORKS",
+        "steel_smith_works": "STEEL-SMITH WORKS",
+        "stone_works": "STONE WORKS",
+        "roof_renovations": "ROOF RENOVATIONS",
+        "house_extensions": "HOUSE EXTENSIONS",
+        "general_contractor": "GENERAL CONTRACTOR",
+        "flat_renovations": "FLAT RENOVATION"
+    }
+}

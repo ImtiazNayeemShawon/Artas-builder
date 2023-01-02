@@ -1,0 +1,283 @@
+/*mixin css imported*/
+@import "../../styles/mixin.scss";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+/*Interior design section banner design code start from here!  */
+
+.Body {
+  background-color: #faf9f6;
+}
+
+.containerInterior {
+  background-image: url("./InteriorBaner.png");
+  background-size: cover;
+  min-height: 400px;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  @include view-mobile {
+    background-image: url("./InteriorBaner.png");
+  }
+  @include view-mobile-h {
+    height: 0vh;
+  }
+}
+
+.InteriorMainHeader {
+  font-size: 70px;
+  line-height: 80px;
+  font-weight: bold;
+  margin: 0px !important;
+  animation-delay: 5s;
+  animation: headerAnimation 4s 1;
+  animation-direction: alternate;
+  color: White;
+  text-align: right;
+  text-transform: uppercase;
+  &.InteriorHeader {
+    @include view-mobile {
+      color: white;
+      font-size: 30px;
+      width: 100%;
+    }
+  }
+  @include sx {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  @include view-mobile {
+    font-size: 28px;
+    line-height: 40px;
+    top: 22vh;
+    animation: headerAnimation 3s 1;
+  }
+  @include view-mindi-h {
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+
+.InteriorBanerContent {
+  position: absolute;
+  text-align: right;
+  font-size: 18px;
+  top: 75vh;
+  height: 40vh;
+  right: 4vw;
+  @include view-mobile {
+    width: 80vw;
+    top: 35vh;
+    right: 13vw;
+  }
+}
+.InteriorButton {
+  background-color: #423fe8;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 500;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-radius: 5px;
+  border: none;
+  @include view-mobile {
+    margin-left: 0;
+    margin-right: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+  }
+}
+
+/*Section data 1 design */
+.InteriorSection1 {
+  .SectionData {
+    background-color: #333c41;
+    width: 90%;
+    height: 30%;
+    margin-top: 120px;
+    border-radius: 5px;
+    padding: 10px;
+    border-style: none;
+    line-height: 19px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    h2,
+    p {
+      color: #ffffff;
+      margin-left: 30vh;
+      font-family: "Roboto", sans-serif;
+      font-weight: lighter;
+    }
+    p {
+      margin-left: 30vh;
+      font-size: 17px;
+    }
+    h2 {
+      font-size: 35px;
+      font-weight: 600;
+    }
+    @include view-mobile {
+      background-color: #ffffff;
+      width: 100%;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      margin: 0px;
+      h2,
+      p {
+        color: #272222;
+        margin-left: 3vh;
+        line-height: 20px;
+      }
+      p {
+        margin-left: 3vh;
+        font-size: smaller;
+      }
+      h2 {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+/*Section data 2 design */
+.InteriorSection1 {
+  .SectionData2 {
+    background-color: #333c41;
+    width: 90%;
+    height: 30%;
+    margin-top: 120px;
+    border-radius: 5px;
+    padding: 10px;
+    border-style: none;
+    line-height: 15px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-left: 17vh;
+    h2,
+    p {
+      color: #ffffff;
+      margin-left: 30vh;
+      font-family: "Roboto", sans-serif;
+      font-weight: lighter;
+    }
+    p {
+      margin-left: 30vh;
+      font-size: 17px;
+    }
+    h2 {
+      font-size: 20px;
+    }
+    @include view-mobile {
+      background-color: #fdfbf9;
+      width: 100%;
+      margin-left: 0px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+
+      h2,
+      p {
+        color: #272222;
+        margin-left: 3vh;
+        line-height: 20px;
+      }
+      p {
+        margin-left: 3vh;
+        font-size: smaller;
+      }
+      h2 {
+        font-size: 25px;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+/*Interior section first row images */
+.InteriorSection2 {
+  margin-top: 20vh;
+  display: flex;
+  .responsiveimg {
+    display: none;
+  }
+  @include view-mobile {
+    margin-top: 10vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+
+    .img1 {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+    .img2,
+    .img3,
+    .img4,
+    .responsiveimg {
+      max-width: 250px;
+      height: 200px;
+      display: block;
+    }
+    .img3 {
+      display: none;
+    }
+  }
+}
+/*Interior section second row images */
+.InteriorSectionImg1 {
+  margin-top: 20vh;
+  display: flex;
+  @include view-mobile {
+    margin-top: 10vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+
+    .imgSection2i {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+  }
+}
+
+/*Interior section Third row images */
+.InteriorSectionImg2 {
+  margin-top: 20vh;
+  display: flex;
+  @include view-mobile {
+    margin-top: 10vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+
+    .imgSection2i {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+  }
+}
+/*Interior section Fourth row images */
+.InteriorSectionImg3 {
+  margin-top: 20vh;
+  display: flex;
+  @include view-mobile {
+    margin-top: 10vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+
+  }
+}
+/*Interior section  images bottom margin */
+.InteriorSectionBottom {
+  
+  margin-top: 2vh;
+  @include view-mobile {
+    margin-top: 10vh;
+    display: grid;
+    justify-content: center;
+
+  }
+}
+

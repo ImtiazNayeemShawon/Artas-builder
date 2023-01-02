@@ -1,0 +1,31 @@
+{
+  "greeting": "Hallo Welt",
+  "menu": "meny",
+  "realization": "REALIZATIONS",
+  "testimonials": "TESTIMONIALS",
+  "career": "CAREER",
+  "about_us": "OM OSS",
+  "services": "VÅRA TJÄNSTER",
+  "contact": "KONTAKT",
+  "sv": "Swedish",
+  "en": "English",
+  "contact_us": "Kontakta Oss",
+  "lang": "Choose language:",
+  "main_header2": "BYGG OCH DESIGN",
+  "top_header": "Lyxig husbyggnad",
+  "bottom_header": "har aldrig varit så enkelt",
+  "services_Items": {
+    "supplay_works": "ANLÄGGNINGSARBETE",
+    "drainage_works": "DRÄNERING",
+    "rendering_works": "FASADPUTS",
+    "house_foundations": "HUSGRUND",
+    "mashines_rental": "HYRA GRÄVMASKIN",
+    "flat_renovations": "LÄGENHETSRENOVERING",
+    "groundworks": "MARKARBETE",
+    "steel_smith_works": "PLÅTMÄSTARE",
+    "stone_works": "STENLÄGGNING",
+    "roof_renovations": "TAKRENOVERING",
+    "house_extensions": "TILLBYGGNAD",
+    "general_contractor": "TOTALENTREPRENAD"
+  }
+}

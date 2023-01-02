@@ -1,0 +1,46 @@
+{
+    "ddd": "dd",
+    "realization_header": "Realizations",
+    "arts_team": {
+      "header": "ARTAS TEAM",
+      "paragraph1": "Construction and renovation have never been so simple. With us you can count on comprehensive and professional service for your investments.",
+      "paragraph2": "WE COOPERATE WITH HIGHLY QUALIFIED ARCHITECTS AND CONSTRUCTORS, WHICH GUARANTEES SUCCESS BOTH IN SMALLER AND BIGGER PROJECTS.",
+      "paragraph3": "Ability to solve problems and multitasking are the assets of our company thanks to which you will achieve your dream final effect without any stress.",
+      "button": "our realizations"
+    },
+    "bygg_and_design": {
+      "header": "BYGG & DESIGN",
+      "paragraph1": "We offer complex projects service from a concept to realization.",
+      "paragraph2": "WE WORK WITH SWEDEN ARCHITECTS, ENGINEERS AND INSPECTORS. WE PRODUCE AND ASSEMBLE PREFABRICATED ELEMENTS, AS WELL AS WINDOW AND DOOR CARPENTRY.",
+      "button": "contact us"
+    },
+    "construction_mashinery": {
+      "header": "CONSTRUCTION MACHINERY",
+      "paragraph1": "Our company has one of the best groundwork equpiment.",
+      "paragraph2": "WE ARE EQUIPPED WITH WELL KNOWN MECALAC 8MCR, 10MCR AND 15MC EXCAVATORS WITH ROTOTILT.",
+      "paragraph3": "For the transportation we use hook trucks with palfinger and hms cranes, we also have 30tons mobile crane.",
+      "button": "check our offer"
+    },
+    "title1": {
+      "header": "EMERGENCY SERVICE",
+      "text": "We offer help in emergency situations 24/7 for regular customers."
+    },
+    "title2": {
+      "header": "PROPERTY SERVICE",
+      "text": "We offer regular care of properties during repair and conservation works."
+    },
+    "title3": {
+      "header": "WORK WITH US!",
+      "text": "Our success is the result of a professional approach. If you want to join the group of the best professionals and you feel that you will meet our requirements - do not wait, contact us!"
+    },
+    "contact": {
+      "send": "send",
+      "header": "Contact with us",
+      "name": "Name and surname",
+      "email": "Email",
+      "phone": "Phone",
+      "quastion": "Any guestion?",
+      "sent": "Message sent!",
+      "error": "Something went wrong, please contact us by phone!"
+    }
+}

@@ -1,0 +1,80 @@
+@import "../../styles/mixin.scss";
+
+.container {
+   max-width: 1600px;
+   width: 100%;
+   display: flex;
+   gap: 3vw;
+   justify-content: center;
+   @include min {
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+   }
+
+}
+.maxWidth {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    @include min {
+        margin-top: 0px;
+    }
+}
+.item {
+    width: 35vw;
+    height: 35vw;
+    @include min {
+        width: 90vw;
+        height: 70vw;
+        margin-top: 15px;
+    }
+    @include view-mobile {
+        width: 90vw;
+        height: 90vw;
+        height: 400px;
+    }
+}
+.FormContainer {
+    padding: 5vw 5vw;
+    input {
+      margin-top: 30px;
+      @include min {
+        margin-top: 10px;
+      }
+    }
+    h3 {
+        font-size: 24px;
+        color: #484848
+    }
+}
+.flex {
+    display: flex;
+    gap: 0.5vw;
+    div {
+        width: 100%;
+        margin-bottom: 15px;
+        @include min {
+            margin-bottom: 5px;
+        }
+    }
+}
+.Button {
+    background-color: #423FE8 ;
+    color: white;
+    font-size: 16px;
+    border: 0px;
+    margin-top: 30px;
+    width: 120px;
+    height: 40px;
+    @include min {
+        font-size: 14px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+.Button:hover {
+    cursor: pointer;
+    background-color: #3f3cf5;
+}

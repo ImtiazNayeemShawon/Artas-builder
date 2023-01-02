@@ -1,0 +1,46 @@
+
+@import "../../styles/mixin.scss";
+
+.Slider {
+  margin-top: 10px;
+  width: 100%;
+  position: relative;
+  letter-spacing: 8px;
+  height: 43vw;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-image: url("../../public//realization.png");
+  box-shadow: 0px 5px 5px rgb(0 0 0 / 0.2), 0px -5px 5px rgb(0 0 0 / 0.2);
+}
+.header {
+  font-size: 60px;
+  font-weight: 500;
+  color: white;
+  letter-spacing: 6px;
+  @include big {
+    font-size: 80px;
+  }
+  @include min {
+    font-size: 40px;
+  }
+}
+.buttonRealization {
+  font-size: 15px;
+  margin-top: 10px;
+  font-weight: 600;
+  height: 60px;
+  padding: 0px 30px;
+  @include big {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  @include min {
+    height: 45px;
+  }
+}
+.content {
+  margin-left: 10%;
+  width: 80%;
+  margin-right: 10%;
+}

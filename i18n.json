@@ -1,0 +1,10 @@
+{
+    "locales": ["sv", "en"],
+    "defaultLocale": "sv",
+    "pages": {
+      "*": ["common", "about"],
+      "/about": ["about"],
+      "/kontakt": ["common", "contact"],
+      "/omdomen": ["testimonials", "common"]
+    }
+  }

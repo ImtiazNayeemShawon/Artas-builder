@@ -1,0 +1,46 @@
+{
+  "ddd": "dd",
+  "realization_header": "Artas Bygg l Referenser",
+  "arts_team": {
+    "header": "ARTAS TEAM",
+    "paragraph1": "Byggande och renovering har aldrig varit så enkelt. Hos oss kan du räkna med en omfattande och professionell service för dina investeringar.",
+    "paragraph2": "VI SAMARBETERAR MED HÖGT KVALIFICERADE ARKITEKTER OCH KONSTRUKTÖRER, SOM GARANTERAR FRAMGÅNG BÅDE I MINDRE OCH STÖRRE PROJEKT.",
+    "paragraph3": "Förmåga att lösa problem och multitasking är tillgångarna i vårt företag tack vare vilka du kommer att uppnå din dröm sluteffekt utan stress.",
+    "button": "våra insikter"
+  },
+  "bygg_and_design": {
+    "header": "BYGG & DESIGN",
+    "paragraph1": "VI ERBJUDER KOMPLEXA PROJEKT SERVICE FRÅN KONCEPT TILL FÖRFÖLJANDE.",
+    "paragraph2": "Vi samarbetar med Sveriges arkitekter, ingenjörer och inspektörer. Vi producerar och monterar prefabricerade element samt fönster- och dörrsnickerier.",
+    "button": "kontakta oss"
+  },
+  "construction_mashinery": {
+    "header": "BYGGMASKINER",
+    "paragraph1": "VÅRT FÖRETAG HAR EN AV DE BÄSTA MARKARBETSUTRUSTNINGARNA.",
+    "paragraph2": "VI ÄR UTRUSTAD MED VÄLKÄNDA MECALAC 8MCR, 10MCR och 15MC grävmaskiner med ROTOTILT.",
+    "paragraph3": "FÖR TRANSPORTEN ANVÄNDER VI KROKTRUCKER MED PALFINGER OCH HMS KRANAR, VI HAR ÄVEN 30TONS MOBILKRAN.",
+    "button": "kolla vårt erbjudande"
+  },
+  "title1": {
+    "header": "NÖDTJÄNST",
+    "text": "Vi erbjuder hjälp i akuta situationer 24/7 för stamkunder."
+  },
+  "title2": {
+    "header": "FASTIGHETSSERVICE",
+    "text": "Vi erbjuder regelbunden vård av fastigheter under reparations- och konserveringsarbeten."
+  },
+  "title3": {
+    "header": "JOBBA MED OSS!",
+    "text": "Vår framgång är resultatet av ett professionellt förhållningssätt. Om du vill gå med i gruppen av de bästa proffsen och du känner att du kommer att uppfylla våra krav – vänta inte, kontakta oss!"
+  },
+  "contact": {
+    "send": "Skicka",
+    "header": "Kontakta Oss",
+    "name": "Namn",
+    "email": "Emejl",
+    "phone": "Telefonnummer",
+    "quastion": "Meddelande",
+    "sent": "Meddelande skickat!",
+    "error": "Något gick fel, kontakta oss per telefon!"
+  }
+}

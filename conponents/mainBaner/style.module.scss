@@ -1,0 +1,298 @@
+@import "../../styles/mixin.scss";
+
+.container {
+    background-image: url('./sky.png');
+    background-size: cover;
+    min-height: 400px;
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    overflow: hidden;
+    @include view-mobile{
+        height: 70vh;
+    }
+    @include view-mobile-h {
+        height: 60vh;
+    }
+}
+
+.containerContact {
+    background-image: url('./contact_baner.png');
+    background-size: cover;
+    min-height: 400px;
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    overflow: hidden;
+    @include view-mobile{
+        background-image: url('./baner_min.png');
+        height: 70vh;
+    }
+    @include view-mobile-h {
+        height: 60vh;
+    }
+}
+.christmas {
+    background-image: url('./christmas.jpg');
+    background-size: cover;
+    background-position: 50% 0;
+    min-height: 400px;
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    overflow: hidden;
+    @include view-mobile{
+        height: 70vh;
+    }
+    @include view-mobile-h {
+        height: 60vh;
+    }
+}
+.building {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 88vw;
+    z-index: 1;
+    background-position: bottom 0px right 0px;
+    background-image: url('./building.png');
+    animation: buildingAnimation 3s 1;
+    animation-direction: alternate;
+    @include view-mobile{
+        height: 100vh;
+        background-size: 95vh;
+    }
+    @include view-mobile-h {
+        background-size: 50vh;
+    }
+}
+.christmasStar2 {
+    position: absolute;
+    top: 20vh;
+    right: 72vw;
+    width: 10%;
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-size: 7vw;
+    z-index: 1;
+    background-position: bottom 0px right 0px;
+    background-image: url('./snie.png');
+    // animation: buildingChristam2 6s infinite;
+    // animation-direction: alternate;
+    @include view-mobile{
+        display: none;
+    }
+    @include view-mobile-h {
+        display: none;
+        background-size: 50vh;
+    }
+}
+@keyframes buildingChristam2 {
+    0% { transform: rotate(0deg); opacity: 0.5;     background-image: url('./snie.png');
+    }
+    50%  { transform: rotate(-180deg); opacity: 1;}
+    100% { transform: rotate(-360deg); opacity: 1;  background-image: url('./snie2.png');}
+}
+.christmasStar {
+    position: absolute;
+    top: -85vh;
+    right: 5vw;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 10vw;
+    z-index: 1;
+    background-position: bottom 0px right 0px;
+    transform: rotate(30deg);
+    background-image: url('./snie2.png');
+    animation: buildingChristam 3s 1;
+    animation-direction: alternate;
+    @include view-mobile{
+        height: 100vh;
+    }
+    @include view-mobile-h {
+        background-size: 50vh;
+    }
+}
+@keyframes buildingChristam {
+    0%  {top: -200vh; opacity: 0;}
+    100% {top: -85vh; opacity: 1;}
+}
+.machine {
+    position: absolute;
+    min-width: 300px;
+    width: 48vw;
+    height: 80vh;
+    right: 8vw;
+    z-index: 1;
+    bottom: 10px;
+    // align-items: center;
+    // background-size:contain;
+    // background-repeat :no-repeat;
+    background-size: cover;
+    // background-position: center; 
+    background-image: url('./machine.png');
+    animation: machineAnimation 3s 1;
+    animation-direction: alternate;
+}
+@keyframes machineAnimation {
+    0%  {right: -500px; opacity: 0;}
+    100% {right: 8vw; opacity: 1;}
+}
+.divider {
+    font-size: 18px;
+    width: 140px;
+    background-color: black;
+    height: 2px;
+    opacity: 0;
+    animation: dividerAnimation 5s 1;
+    animation-direction: alternate;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes buildingAnimation {
+    0%  {bottom: -500px; opacity: 0;}
+    100% {bottom: 0px; opacity: 1;}
+}
+@keyframes dividerAnimation {
+    0%  {opacity: 0;}
+    100% { opacity: 1;}
+}
+@keyframes headerAnimation {
+    0%  {transform: translate(-200px, 0px); opacity: 0;}
+    100% { transform: translate(0px,0px); opacity: 1;}
+}
+@keyframes headerSmallAnimation {
+    0%  {transform: translate(200px, 0px); opacity: 0;}
+    50% {transform: translate(100px, 0px); opacity: 0.2;}
+    100% {transform: translate(0px, 0px); opacity: 1;}
+
+}
+.mainHeader {
+    font-size: 70px;
+    line-height: 80px;
+    font-weight: bold;
+    margin: 0px !important;
+    animation-delay: 5s;
+    animation: headerAnimation 4s 1;
+    animation-direction: alternate;
+    &.contactHeader {
+        @include view-mobile {
+            color: white
+        }
+    }
+    @include sx{
+        font-size: 50px;
+        line-height: 60px;
+      }
+    @include view-mobile{
+        font-size: 28px;
+        line-height: 40px;
+        top: 22vh;
+        animation: headerAnimation 3s 1;
+    }
+    @include view-mindi-h {
+        font-size: 22px;
+        line-height: 30px;
+    }
+}
+.banerContent {
+    position: absolute;
+    z-index: 5;
+    font-size: 18px;
+    top: 27vh;
+    width: 40vw;
+    height: 40vh;
+    left: 6vw;
+    @include view-mobile{
+        width: 80vw;
+        top: 15vh;
+    }
+}
+.banerContentChristmas {
+    position: absolute;
+    z-index: 5;
+    font-size: 18px;
+    width: 40vw;
+    height:20vh;
+    left: 50vw - 15vw;
+    bottom: 10px;
+    @include view-mobile{
+        width: 80vw;
+        top: 15vh;
+    }
+}
+.topHeader {
+    animation-delay: 5s;
+    animation: headerSmallAnimation 6s 1;
+    animation-direction: alternate;
+    @include sx{
+        font-size: 16px;
+    }
+    @include view-mobile {
+        font-size: 12px;
+    }
+    @include view-mindi-h {
+        font-size: 14px;
+    }
+}
+.bottomHeader {
+    animation-delay: 5s;
+    animation: headerSmallAnimation 4s 1;
+    animation-direction: alternate;
+    @include sx{
+        font-size: 14px;
+    }
+}
+.contactButtonChrsitmas {
+    font-size: 18px !important;
+    background-color: #820808 !important;
+    color: white !important;
+    border-color: #423FE8 !important;
+    box-shadow: 0px;
+    width: 30vw;
+    font-weight: 400;
+    border: 0px;
+    padding: 10px 20px !important;
+    text-transform: capitalize;
+    &:hover {
+        background-color: #423FE8 !important;
+        cursor: pointer;
+    }
+    @include view-mobile {
+        margin-top: 30vh;
+        font-size: 14px !important;
+    }
+    @include big {
+        margin-top: 23px;
+        font-size: 25px !important;
+    }
+}
+.contactButton {
+    margin-top: 20px;
+    font-size: 18px !important;
+    background-color: #423FE8 !important;
+    color: white !important;
+    border-color: #423FE8 !important;
+    box-shadow: 0px;
+    font-weight: 400;
+    border: 0px;
+    padding: 10px 20px !important;
+    text-transform: capitalize;
+    @include view-mobile {
+        font-size: 14px !important;
+    }
+    @include big {
+        margin-top: 23px;
+        font-size: 25px !important;
+    }
+}
+.contactButton:hover {
+    opacity: 0.4 !important;
+   cursor:  pointer !important;
+}
+

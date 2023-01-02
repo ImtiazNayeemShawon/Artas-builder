@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "./mixin.scss";
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif !important;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+@media (prefers-color-scheme: white) {
+  html {
+    color-scheme: white;
+  }
+  body {
+    color: black;
+    background: white;
+  }
+}
+.ant-menu-horizontal {
+  text-transform: uppercase !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  background-color:  rgba(0,0,0,0) !important;
+  border: 0px !important;
+  @include big {
+    font-size: 18px !important;
+  }
+  @include sx{
+    font-size: 14px !important;
+  }
+  @include min {
+    font-size: 12px !important;
+  }
+
+}
+.ant-menu-inline {
+  @include view-mobile { 
+    font-size: 10px !important;
+    margin: 0px  !important;
+    padding: 0px  !important;
+  }
+}
+.ant-menu-item {
+  @include min {
+    height: 25px !important;
+  }
+}
+.ant-menu-vertical.ant-menu-sub > .ant-menu-item {
+  @include sx { 
+    margin-bottom: 15px !important;
+  }
+}
+.ant-menu-horizontal > .ant-menu-item::after,
+.ant-menu-horizontal > .ant-menu-submenu::after {
+  @include sx { 
+    border-bottom: none !important;
+    transition: none !important;
+  }
+}
+.RealizationHedaer {
+  margin-top: 10px;
+  background-color: white;
+  color:black;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 20px;
+  width: 100%;
+  padding: 15px 0px;
+  text-align: center;
+  box-shadow: 0px 5px 5px rgb(0 0 0 / 0.2), 0px -5px 5px rgb(0 0 0 / 0.2);
+
+}
+.stickySocial {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3B5998;
+  top: 100px;
+  right: 0px;
+  z-index: 30;
+  &:hover {
+    background-color: blue;
+    cursor: pointer;
+  }
+}
+.stickySocial2 {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #DD2A7B;
+  top: 150px;
+  right: 0px;
+  z-index: 30;
+  &:hover {
+    background-color: #FEDA77;
+    cursor: pointer;
+  }
+}
+
+.imageAniamtion {
+  width: 100%;
+  height: 800px;
+
+}
+.sorry {
+  padding-top: 50px;
+  @include min{
+    font-size: 10px;
+    font-weight: 20;
+    padding: 0px 50px;
+  }
+  text-align: center;
+}
+.mapWrapper {
+  width: 100%;
+  height: 40vw;
+  margin: auto;
+  max-width: 1300px;
+  margin-bottom: 90px;
+  @include view-mobile {
+    height: 70vw;
+  }
+}
+.contact-item-c {
+  width: 60%;
+  box-shadow: 0px 3px 6px #00000029;
+  height: 30vw;
+  min-height: 500px;
+  @include min {
+      width: 90vw;
+      height: 70vw;
+      margin-top: 15px;
+  }
+  @include view-mobile {
+      width: 90vw;
+      height: 90vw;
+      height: 400px;
+  }
+}
+.contact-item {
+  height: 30vw;
+  width: 37%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include min {
+      width: 90vw;
+      height: 70vw;
+      margin-top: 15px;
+  }
+  @include view-mobile {
+      width: 90vw;
+      height: 90vw;
+      height: 400px;
+  }
+}
+.container-contact {
+  max-width: 1300px;
+  width: 100%;
+  display: flex;
+  gap: 2%;
+  justify-content: center;
+  @include min {
+   flex-direction: column;
+   align-items: center;
+   gap: 0px;
+  }
+}
+.maxWidth-contact {
+  margin-bottom: 30px;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   margin-top: 50px;
+   @include min {
+       margin-top: 0px;
+   }
+}
+.contact-item-content {
+  border-left: #423FE8 9px solid;
+  padding-left: 30px;
+  font-size: 16px;
+  @include view-mobile {
+    font-size: 16px;
+  }
+  h2 {
+    margin-bottom: 2px;
+    margin-top: 30px;
+    font-size: 20px;
+    @include view-mobile {
+      font-size: 18px;
+      margin-bottom: 0px;
+    }
+  }
+}
+.ant-popover-inner-content {
+  padding: 4px 3px !important;
+}
+.ant-popover-inner { 
+  background-color:rgb(255, 255, 255, 0.9) !important;
+}
+.ant-popover-arrow-content {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  --antd-arrow-background-color: rgba(255, 255, 255, 0.9) !important;
+}
+
