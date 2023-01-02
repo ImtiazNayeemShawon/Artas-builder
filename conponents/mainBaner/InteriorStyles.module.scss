@@ -166,8 +166,9 @@
       margin-left: 30vh;
       font-size: 17px;
     }
-    h2 {
-      font-size: 20px;
+     h2 {
+      font-size: 35px;
+      font-weight: 600;
     }
     @include view-mobile {
       background-color: #fdfbf9;
@@ -175,7 +176,9 @@
       margin-left: 0px;
       padding-top: 30px;
       padding-bottom: 30px;
-
+h2 {
+      font-size: 20px;
+    }
       h2,
       p {
         color: #272222;
