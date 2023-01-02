@@ -159,10 +159,9 @@ const Interior: NextPage = () => {
               <div className={Style.imgSection3}>
                 <Image src={Section5iv} height={400} alt="section images" />
               </div>
-              <div className={Style.imgSection4}>
+              <div className={Style.imgSection3}>
                 <Image
                   src={Section5vi}
-                  width={500}
                   height={400}
                   alt="section images"
                 />
@@ -170,18 +169,23 @@ const Interior: NextPage = () => {
             </div>
             <br />
             <div className={Style.InteriorSectionBottom}>
-              <Image
-                src={Section5vii}
-                width={420}
-                height={400}
-                alt="section images"
-              />
-              <Image src={Section5i} height={400} alt="section images" />
-              <Image
-                src={Section5v}
-                height={400}
-                alt="section images"
-              />
+              <div className={Style.imgSection4}>
+                {" "}
+                <Image
+                  src={Section5vii}
+                  width={400}
+                  height={400}
+                  alt="section images"
+                />
+              </div>
+              <div className={Style.imgSection4}>
+                {" "}
+                <Image src={Section5i} height={400} alt="section images" />
+              </div>
+              <div className={Style.imgSection4}>
+                {" "}
+                <Image src={Section5v} height={400} alt="section images" />
+              </div>
             </div>
           </div>
         </main>

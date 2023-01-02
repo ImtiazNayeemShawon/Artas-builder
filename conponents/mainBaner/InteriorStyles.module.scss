@@ -94,15 +94,16 @@
 .InteriorSection1 {
   .SectionData {
     background-color: #333c41;
-    width: 90%;
+    width: 80%;
     height: 30%;
     margin-top: 120px;
     border-radius: 5px;
     padding: 10px;
     border-style: none;
-    line-height: 19px;
+    line-height: 23px;
     padding-top: 70px;
     padding-bottom: 70px;
+    padding-right: 100px;
     h2,
     p {
       color: #ffffff;
@@ -132,7 +133,7 @@
       }
       p {
         margin-left: 3vh;
-        font-size: smaller;
+        font-size: small;
       }
       h2 {
         font-size: 20px;
@@ -145,16 +146,16 @@
 .InteriorSection1 {
   .SectionData2 {
     background-color: #333c41;
-    width: 90%;
+    width: 80%;
     height: 30%;
     margin-top: 120px;
     border-radius: 5px;
     padding: 10px;
     border-style: none;
-    line-height: 15px;
+    line-height: 23px;
     padding-top: 40px;
     padding-bottom: 40px;
-    margin-left: 17vh;
+    margin-left: 288px;
     h2,
     p {
       color: #ffffff;
@@ -165,8 +166,9 @@
     p {
       margin-left: 30vh;
       font-size: 17px;
+      padding-right: 100px;
     }
-     h2 {
+    h2 {
       font-size: 35px;
       font-weight: 600;
     }
@@ -176,9 +178,10 @@
       margin-left: 0px;
       padding-top: 30px;
       padding-bottom: 30px;
-h2 {
-      font-size: 20px;
-    }
+      padding-right: 1px;
+      h2 {
+        font-size: 20px;
+      }
       h2,
       p {
         color: #272222;
@@ -187,7 +190,7 @@ h2 {
       }
       p {
         margin-left: 3vh;
-        font-size: smaller;
+        font-size: small;
       }
       h2 {
         font-size: 25px;
@@ -264,23 +267,34 @@ h2 {
 .InteriorSectionImg3 {
   margin-top: 20vh;
   display: flex;
+  .imgSection3 {
+    margin: 15px;
+  }
   @include view-mobile {
     margin-top: 10vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
-
+    .imgSection3 {
+      margin: 7px;
+    }
   }
 }
 /*Interior section  images bottom margin */
 .InteriorSectionBottom {
-  
   margin-top: 2vh;
+  margin-bottom: 25vh;
+  display: flex;
+  .imgSection4 {
+    margin: 15px;
+  }
   @include view-mobile {
     margin-top: 10vh;
     display: grid;
+    grid-template-columns: 1fr ;
     justify-content: center;
-
+    .imgSection4 {
+      margin: 7px;
+    }
   }
 }
-
