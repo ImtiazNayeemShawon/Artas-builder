@@ -1,0 +1,24 @@
+stages:
+  - build
+
+variables:
+  DOCKER_HOST: tcp://docker:2375
+
+services:
+  - docker:dind
+
+docker-build:
+  image: google/cloud-sdk:alpine
+  stage: build
+  script:
+    - echo "$GCP_KEY" | base64 -d > /tmp/key.json
+    - gcloud auth activate-service-account "$GCP_ACCOUNT" --key-file=/tmp/key.json
+    - docker build -t "$IMAGE_NAME":"$CI_COMMIT_SHORT_SHA" .
+    - gcloud auth configure-docker
+    - docker push "$IMAGE_NAME":"$CI_COMMIT_SHORT_SHA"
+    - gcloud run deploy artas-front --image "$IMAGE_NAME":"$CI_COMMIT_SHORT_SHA" --platform managed --project "$GCP_PROJECT" --region "$GCP_REGION"
+    - sleep 30
+    - curl -s -X POST "https://api.cloudflare.com/client/v4/zones/94b58c64c7e0bbc32576fd181018ee2a/purge_cache" -H "Authorization:Bearer $CF_KEY" -H "Content-Type:application/json" --data '{"purge_everything":true}'
+
+  only:
+    - main

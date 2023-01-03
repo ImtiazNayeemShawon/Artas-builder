@@ -2,6 +2,7 @@ $tablet-width: 1530px;
 $big-screen: 1400px;
 $small-screen: 1300px;
 $min-screen: 1000px;
+$sx-min-screen: 1180px;
 $mindi-screen: 810.98px;
 $mobile-width: 750px;
 $mobile-long: 650px;
@@ -20,6 +21,12 @@ $mobile-long: 650px;
 
 @mixin sx {
   @media screen and (max-width: #{$small-screen}) {
+    @content;
+  }
+}
+
+@mixin sx-min-screen {
+  @media screen and (max-width: #{$sx-min-screen}) {
     @content;
   }
 }

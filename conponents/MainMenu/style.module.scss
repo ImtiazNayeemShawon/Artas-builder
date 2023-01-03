@@ -152,16 +152,20 @@
   justify-content: right;
   width: 870px;
   @include big {
-    width: 770px;
+    width: 1000px;
   }
   @include sx{
-    width: 650px;
+    width: 800px;
   }
-  @include min {
-    width: 500px;
+  @include sx-min-screen 
+  {
+    width: 750px;
   }
   @include mindi {
     width: 350px;
+  }
+  @include min {
+    width: 500px;
   }
   @include view-mobile {
     width: 100px;

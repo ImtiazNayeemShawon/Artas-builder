@@ -54,15 +54,19 @@ const Interior: NextPage = () => {
               <div className={Style.SectionData}>
                 <h2>OMFATTANDE UTFORMNING</h2> <br />
                 <p className="max-sm:text-red-600">
-                  I samarbete med arkitekter och inredningsarkitekter
-                  specialiserar vi oss på komple- xa projekt för bostäder, hus,
-                  lägenheter och lägenheter. Vi utför även kommersiella projekt,
-                  t.ex. kontorslokaler, pensionat, spa och hotell. Innan vi
-                  påbörjar designpro- cessen fokuserar vi på en grundlig
-                  intervju med investeraren för att lära oss deras önskemål och
-                  förväntningar. Projektet består av fyra faser: förslag till
-                  funktionell layout, utformning av konceptet, framtagande av
-                  konstruktionsritningar och möbelritningar.
+                  I samarbete med arkitekter och inredningsarkitekter specialiserar
+                   vi oss på    komple- xa projekt 
+                   för bostäder,   hus, lägenheter 
+                   och lägenheter.  Vi utför 
+                   även kommersiella projekt,
+                    t.ex.   kontorslokaler, 
+                    pensionat, spa och hotell.
+                     Innan vi påbörjar designpro- 
+                     cessen fokuserar vi på en
+                      grundlig intervju med 
+                      investeraren för att lära 
+                      oss deras önskemål och förväntningar. Projektet 
+                      består av fyra faser: förslag till funktionell layout, utformning av konceptet, framtagande av konstruktionsritningar och möbelritningar.
                 </p>
               </div>
             </div>

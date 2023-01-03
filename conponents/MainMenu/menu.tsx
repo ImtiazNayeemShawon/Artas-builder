@@ -4,8 +4,7 @@ import {
   HomeOutlined,
   SettingOutlined,
   MessageOutlined,
-  HeartOutlined,
-  CheckCircleOutlined,
+  FormatPainterOutlined
 } from "@ant-design/icons";
 import useTranslation from "next-translate/useTranslation";
 import { useRouter } from "next/router";
@@ -44,6 +43,9 @@ const MainMenu: FC<IProps> = (props) => {
     >
       <Menu.Item key="realization" icon={<HomeOutlined />}>
         <Link href="/referenser">{t("common:realization")}</Link>
+      </Menu.Item>
+      <Menu.Item key="interior" icon={<FormatPainterOutlined />}>
+        <Link href="/interior">{t("common:interior")}</Link>
       </Menu.Item>
       <Menu.Item key="testimonials" icon={<MessageOutlined />}>
         <Link href="/omdomen">{t("common:testimonials")}</Link>

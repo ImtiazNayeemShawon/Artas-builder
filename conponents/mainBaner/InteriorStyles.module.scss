@@ -64,9 +64,9 @@
   height: 40vh;
   right: 4vw;
   @include view-mobile {
-    width: 80vw;
+    width: 100%;
     top: 35vh;
-    right: 13vw;
+    right: 12vw;
   }
 }
 .InteriorButton {
@@ -82,11 +82,12 @@
   border: none;
   @include view-mobile {
     margin-left: 0;
-    margin-right: 60px;
+    margin-right: 75px;
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 8px;
     padding-top: 8px;
+    margin-bottom: 30px;
   }
 }
 
@@ -96,7 +97,7 @@
     background-color: #333c41;
     width: 80%;
     height: 30%;
-    margin-top: 120px;
+    margin-top: 20vh;
     border-radius: 5px;
     padding: 10px;
     border-style: none;
@@ -104,6 +105,8 @@
     padding-top: 70px;
     padding-bottom: 70px;
     padding-right: 100px;
+    text-align: justify;
+    text-justify: inter-word;
     h2,
     p {
       color: #ffffff;
@@ -119,24 +122,29 @@
       font-size: 35px;
       font-weight: 600;
     }
+
     @include view-mobile {
       background-color: #ffffff;
       width: 100%;
-      padding-top: 30px;
+      padding-top: 10px;
       padding-bottom: 30px;
-      margin: 0px;
+      padding-right: 0px;
+      padding: 30px;
+      margin-top: 3vh;
       h2,
       p {
         color: #272222;
-        margin-left: 3vh;
+        margin-left: 0vh;
         line-height: 20px;
+        text-align: justify;
+        text-justify: inter-word;
       }
       p {
-        margin-left: 3vh;
         font-size: small;
       }
       h2 {
         font-size: 20px;
+        text-align: center;
       }
     }
   }
@@ -156,12 +164,15 @@
     padding-top: 40px;
     padding-bottom: 40px;
     margin-left: 288px;
+
     h2,
     p {
       color: #ffffff;
       margin-left: 30vh;
       font-family: "Roboto", sans-serif;
       font-weight: lighter;
+      text-align: justify;
+      text-justify: inter-word;
     }
     p {
       margin-left: 30vh;
@@ -175,26 +186,34 @@
     @include view-mobile {
       background-color: #fdfbf9;
       width: 100%;
+      margin-top: 1vh;
       margin-left: 0px;
       padding-top: 30px;
       padding-bottom: 30px;
-      padding-right: 1px;
+      padding-right: 0px;
+      padding-right: 0px;
+      padding: 30px;
+
       h2 {
         font-size: 20px;
       }
       h2,
       p {
         color: #272222;
-        margin-left: 3vh;
+        margin-left: 0vh;
         line-height: 20px;
+        text-align: justify;
+        text-justify: inter-word;
       }
       p {
-        margin-left: 3vh;
+        margin-left: 0vh;
         font-size: small;
+        padding-right: 0px;
       }
       h2 {
         font-size: 25px;
         font-weight: 600;
+        text-align: center;
       }
     }
   }
@@ -208,7 +227,7 @@
     display: none;
   }
   @include view-mobile {
-    margin-top: 10vh;
+    margin-top: 7vh;
     display: grid;
     grid-template-columns: 1fr 2fr;
     justify-content: center;
@@ -235,7 +254,7 @@
   margin-top: 20vh;
   display: flex;
   @include view-mobile {
-    margin-top: 10vh;
+    margin-top: 3vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
@@ -252,7 +271,7 @@
   margin-top: 20vh;
   display: flex;
   @include view-mobile {
-    margin-top: 10vh;
+    margin-top: 5vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
@@ -271,7 +290,7 @@
     margin: 15px;
   }
   @include view-mobile {
-    margin-top: 10vh;
+    margin-top: 4vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
@@ -289,9 +308,10 @@
     margin: 15px;
   }
   @include view-mobile {
-    margin-top: 10vh;
+    margin-bottom: 10vh;
+    margin-top: 7vh;
     display: grid;
-    grid-template-columns: 1fr ;
+    grid-template-columns: 1fr;
     justify-content: center;
     .imgSection4 {
       margin: 7px;
