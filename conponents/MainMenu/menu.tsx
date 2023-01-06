@@ -36,7 +36,7 @@ const MainMenu: FC<IProps> = (props) => {
 
   return (
     <Menu
-      style={{ width: "100%", textAlign: "right" }}
+      style={{ width: "100%", textAlign: "right" , marginLeft: "100px" }}
       onClick={onClick}
       mode={props.mobile ? "inline" : "horizontal"}
       defaultSelectedKeys={["ofert"]}
