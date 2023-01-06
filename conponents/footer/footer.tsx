@@ -42,7 +42,7 @@ const Footer = () => {
               </div>
               <div className={styles.contentMobile}>
                 <div> <InstagramOutlined style={{marginRight: '5px'}}/>
-                  <a href="https://instagram.com/artasbygg?igshid=YmMyMTA2M2Y=" >instagram.com</a>
+                  <a href="https://instagram.com/artasbyggab?igshid=YmMyMTA2M2" >instagram.com</a>
                 </div>
               </div>
             </div>
@@ -57,7 +57,7 @@ const Footer = () => {
                 <div>
                   <InstagramOutlined style={{marginRight: '5px', fontWeight: '700', fontSize: '18px'}}/>
                   <div style={{float: 'right'}}>
-                    <a href="https://instagram.com/artasbygg?igshid=YmMyMTA2M2Y=" >instagram.com/artasbygg</a>
+                    <a href="https://instagram.com/artasbyggab?igshid=YmMyMTA2M2" >instagram.com/artasbygg</a>
                   </div>
                 </div>
                 <div>

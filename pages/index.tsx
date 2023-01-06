@@ -30,12 +30,9 @@ const Home: NextPage = () => {
           </Link>
         </div>
         <div className="stickySocial2">
-        <Link href="https://instagram.com/artasbygg?igshid=YmMyMTA2M2Y=">
-
-     
+           <Link href="https://instagram.com/artasbyggab?igshid=YmMyMTA2M2">
             <InstagramOutlined />
             </Link>
-
         </div>
         <header>
           <MainBaner />

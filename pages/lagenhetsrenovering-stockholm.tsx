@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import { Suspense, useEffect, useState } from "react";
 import Footer from "../conponents/footer/footer";
 import tlo from "../public/lagen.jpg";
-import tloSx from "../public/lagen_sx.jpg";
+import tloSx from "../public/lang_sx.jpg";
 import "antd/dist/antd.css";
 import useTranslation from "next-translate/useTranslation";
 import { GlobalBaner } from "../conponents/mainBaner/GlobalBaner";
