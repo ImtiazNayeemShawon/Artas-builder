@@ -20,19 +20,30 @@ const Header : FC<IProps> = ({sticky}) => {
   const { t } = useTranslation();
 
   const [mobile, setMobile] = useState<boolean>();
+  const [logoMobile, setLogoMobile] = useState<boolean>();
 
   useEffect(() => {
-    if (window.innerWidth < 790) {
+    if (window.innerWidth < 990) {
       setMobile(true);
     } else {
       setMobile(false);
     }
+    if (window.innerWidth < 1252) {
+      setLogoMobile(true);
+    } else {
+      setLogoMobile(false);
+    }
 
     function handleResize() {
-      if (window.innerWidth < 790) {
+      if (window.innerWidth < 990) {
         setMobile(true);
       } else {
         setMobile(false);
+      }
+      if (window.innerWidth < 1252) {
+        setLogoMobile(true);
+      } else {
+        setLogoMobile(false);
       }
     }
 
@@ -43,11 +54,11 @@ const Header : FC<IProps> = ({sticky}) => {
   return (
     <div className={sticky ? styles.stickyHeader : styles.Header}>
       <div className={styles.HeaderContainer}>
-        <div className={ sticky ? styles.logoSticky : styles.logo } 
+        <div className={styles.logoSticky } 
          onClick={()=>{ router.push({ pathname: '/' })}}
-          style={{cursor: "pointer"}}>
+          >
           <Image
-            src={mobile ? "/logoAll.svg" : "/logo.svg"}
+            src={logoMobile ? "/logoAll.svg" : "/logo.svg"}
             alt="logo"
             objectFit="contain"
             layout="fill"
@@ -56,11 +67,11 @@ const Header : FC<IProps> = ({sticky}) => {
           />
         </div>
 
-        {!mobile && (
-          <div className={ sticky ? styles.logoTextSticky : styles.logoText } onClick={()=>{ router.push({ pathname: '/' })}}
-          style={{cursor: "pointer"}}>
+        {!logoMobile && (
+          <div className={styles.logoTextSticky} onClick={()=>{ router.push({ pathname: '/' })}}
+          >
             <Image
-              src="/artas_tekst.svg"
+              src="/logo_text.svg"
               alt="logo"
               objectFit="contain"
               layout="fill"

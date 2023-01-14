@@ -36,14 +36,17 @@ const Interior: NextPage = () => {
   return (
     <Suspense fallback="loading">
       <Head>
-        <title>Interior Designs</title>
-        <meta name="description" content="" key="desc" />
+        <title>Inredning | Artas Bygg</title>
+        <meta
+          name="description"
+          content="Vi tar inredning till en ny nivå tack vare våra inredningsarkitekter. Läs mer om vad som gör oss unika och kontakta oss idag för förverkligande av er dröm."
+          key="desc"
+        />
       </Head>
       <div>
         {/*Interior banner Component*/}
         <header>
           <InteriorBaner />
-          <div className={Style.triangleDown}></div>
         </header>
         {/*Interior banner Component*/}
 
@@ -53,20 +56,16 @@ const Interior: NextPage = () => {
             <div className={Style.InteriorSection1}>
               <div className={Style.SectionData}>
                 <h2>OMFATTANDE UTFORMNING</h2> <br />
-                <p className="max-sm:text-red-600">
-                  I samarbete med arkitekter och inredningsarkitekter specialiserar
-                   vi oss på    komple- xa projekt 
-                   för bostäder,   hus, lägenheter 
-                   och lägenheter.  Vi utför 
-                   även kommersiella projekt,
-                    t.ex.   kontorslokaler, 
-                    pensionat, spa och hotell.
-                     Innan vi påbörjar designpro- 
-                     cessen fokuserar vi på en
-                      grundlig intervju med 
-                      investeraren för att lära 
-                      oss deras önskemål och förväntningar. Projektet 
-                      består av fyra faser: förslag till funktionell layout, utformning av konceptet, framtagande av konstruktionsritningar och möbelritningar.
+                <p>
+                  I samarbete med arkitekter och inredningsarkitekter
+                  specialiserar vi oss på komplexa projekt för bostäder, hus,
+                  villor och lägenheter. Vi utför även kommersiella projekt,
+                  t.ex. kontorslokaler, pensionat, spa och hotell. Innan vi
+                  påbörjar designprocessen tar vi ett möte med kunden för att
+                  djupdyka och förstå deras önskemål och förväntningar fullt ut.
+                  Sedan består projektet av fyra delar: Förslag till funktionell
+                  layout Utformning av konceptet Framtagande av
+                  konstruktionsritningar samt Möbelritningar.
                 </p>
               </div>
             </div>
@@ -91,18 +90,19 @@ const Interior: NextPage = () => {
             {/* Interior Column 2  */}
             <div className={Style.InteriorSection1}>
               <div className={Style.SectionData2}>
-                <h2>SERVICE FRÅN A TILL Z</h2> <br />
+                <h2>SERVICE FRÅN A TILL Ö</h2> <br />
                 <p>
                   Vi erbjuder också en tjänst för byggnadsövervakning. För vem
-                  skulle en sådan tjänst vara idealisk? För: - De som inte vill
-                  eller kan ägna sin tid åt renovering eller efterbehandling. -
-                  för dem som bor långt bort och inte kan resa till
-                  byggarbetsplatsen ﬂera gånger i veckan och som i stället för
-                  att bli amatörsamordnare, byggledare och arbetsleda- re i en
-                  och samma person föredrar att ägna sin tid åt sitt yrkesarbete
-                  eller sitt famil- j eliv;- och för dem som vet att det är en
-                  svår process att bygga ett hus eller renovera ett hus och som
-                  föredrar att låta proffsen ta hand om detta.
+                  skulle en sådan tjänst vara idealisk? För de som inte vill
+                  eller kan ägna sin tid åt renovering eller kontrollmoment. För
+                  dem som bor långt bort och inte kan resa till
+                  byggarbetsplatsen ﬂera gånger i veckan. Passar perfekt om du
+                  vill undvika att själv agera samordnare, byggledare och
+                  arbetsledare i en och samma person. Till dig som föredrar att
+                  ägna sin tid åt sitt andra saker såsom karriär eller
+                  familjeliv och vet att det är en svår process att bygga ett
+                  hus eller renovera ett hus. Passar dig som förmodligen
+                  föredrar att låta proffsen själva ta hand om projektet.
                 </p>
               </div>
             </div>
@@ -123,11 +123,8 @@ const Interior: NextPage = () => {
               <div className={Style.SectionData}>
                 <h2> INKÖP </h2> <br />
                 <p>
-                  På grundval av ett gemensamt urval av produkter, material och
-                  möbler tar vi också hand om beställningskoordinering och hela
-                  inköpsprocessen. Vi samarbetar med beprövade tillverkare,
-                  vilket ger garantier för konsumenternas säkerhet och pro-
-                  duktkvalitet.
+                Efter ett gemensamt urval av produkter, material och möbler tar vi även hand om beställning, logistik och hela inköpsprocessen. Vi samarbetar med väletablerade tillverkare, vilket ger för dig som kund garantier, säkerhet och högsta produktkvalitet.
+
                 </p>
               </div>
             </div>
@@ -147,9 +144,7 @@ const Interior: NextPage = () => {
               <div className={Style.SectionData2}>
                 <h2>INVÄNDIG MÅLNING</h2> <br />
                 <p>
-                  Vår inredningsarkitekt Katarzyna Kowalska är förutom designer
-                  även målare. För dem som är intresserade kan hon komplettera
-                  era utrymmen med konst
+                Vår inredningsarkitekt Katarzyna Kowalska är förutom designer även målare. För dem som är intresserade kan hon komplettera era utrymmen med konst
                 </p>
               </div>
             </div>
@@ -164,11 +159,7 @@ const Interior: NextPage = () => {
                 <Image src={Section5iv} height={400} alt="section images" />
               </div>
               <div className={Style.imgSection3}>
-                <Image
-                  src={Section5vi}
-                  height={400}
-                  alt="section images"
-                />
+                <Image src={Section5vi} height={400} alt="section images" />
               </div>
             </div>
             <br />
