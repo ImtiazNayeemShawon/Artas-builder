@@ -45,7 +45,7 @@ const MainMenu: FC<IProps> = (props) => {
         <Link href="/referenser">{t("common:realization")}</Link>
       </Menu.Item>
       <Menu.Item key="interior" icon={<FormatPainterOutlined />}>
-        <Link href="/interior">{t("common:interior")}</Link>
+        <Link href="/inredning">{t("common:interior")}</Link>
       </Menu.Item>
       <Menu.Item key="testimonials" icon={<MessageOutlined />}>
         <Link href="/omdomen">{t("common:testimonials")}</Link>

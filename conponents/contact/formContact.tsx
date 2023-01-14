@@ -60,7 +60,7 @@ const FormConact: NextPage = () => {
 
   return (
     <div className={styles.FormContainer}>
-        <h3>{t("about:contact.header")}</h3>
+        <h3>{t("Mejlformulä")}</h3>
         <form onSubmit={(e) => { e.preventDefault; handleSubmit(e);}}>
         <Input status={ formik.touched.name && Boolean(formik.errors.name) ?  "error" : undefined} name="name"  type="text" placeholder={t("about:contact.name")}
           onChange={(e)=>{formik.setFieldValue('name', e.target.value)}}

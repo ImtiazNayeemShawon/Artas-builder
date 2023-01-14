@@ -35,52 +35,23 @@
     height: 45px;
   }   
 }
-.logo {
-  left: 20px;
-  top: 8px;
-  position: absolute;
-  z-index: 5;
-  width: 100px;
-  height: 100px;
-  -webkit-animation:spin 16s linear infinite;
-  -moz-animation:spin 16s linear infinite;
-  animation:spin 16s linear infinite;
-  animation-delay: 8s;
-  @include min {
-    -webkit-animation: none;
-    -moz-animation:none;
-    animation:none;
-    width: 120px;
-    left: 6px;
-    width: 90px;
-    height: 90px;
-    top: 4px;
-  }   
-}
 .logoSticky {
-  left: 40px;
-  top: 4px;
+  left: 30px;
+  top: 12px;
   position: absolute;
   z-index: 5;
-  width: 80px;
-  height: 80px;
+  width: 106px * 0.85;
+  height: 70px * 0.85;
   -webkit-animation:spin 16s linear infinite;
   -moz-animation:spin 16s linear infinite;
   animation:spin 16s linear infinite;
-  animation-delay: 8s;
-  @include sx{
-    width: 90px;
-    height: 90px;
-  }
+  animation-delay: 8s;  
   @include min {
-    display: inline;
-    -webkit-animation: none;
-    -moz-animation:none; 
-    animation:none;
-    width: 120px;
-    left: 6px;
-    height: 35px;
-    top: 4px;
+    left: 8px;
+    top: -8px;
+    width: 106px * 0.85;
+    height: 70px * 0.85;
+    animation: none;
   }   
 }
 @-moz-keyframes spin { 
@@ -96,55 +67,23 @@
   } 
 }
 .logoTextSticky {
-  top: 0px;
-  left: 130px;
-  width: 110px;
-  height: 90px;
+  top: 12px;
+  left: 132px;
+  width: 182px * 0.85;
+  height: 70px * 0.85;
   position: absolute;
-  @include big {
-    width: 100px;
-    height: 80px;
-  }
   @include min {
-    left: 100px;
-    width: 80px;
-    height: 40px;
-  }
-  @include mindi {
-    left: 100px;
-    width: 90px;
-    height: 45px;
+    border: 1px solid blue;
+    border: 1px solid red;
+    left: 80px;
+    top: 12px;
+    width: 182px * 0.8;
+    height: 70px * 0.8;
   }
   @include view-mindi-h {
+    border: 1px solid blue;
     left: 110px;
 }
-}
-.logoText {
-  top: 0px;
-  left: 130px;
-  width: 110px;
-  height: 90px;
-  position: absolute;
-  @include big {
-    width: 130px;
-    height: 110px;
-  }
-  @include sx{
-  }
-  @include min {
-    width: 100px;
-    height: 45px;
-    left: 90px;
-  }
-  @include mindi {
-    left: 73px;
-    width: 90px;
-    height: 66px;
-  }
-  @include view-mindi-h {
-    left: 110px;
-}
-
 }
 .content {
   z-index: 20;

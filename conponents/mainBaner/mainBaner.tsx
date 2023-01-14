@@ -23,25 +23,17 @@ useEffect(() => {
 }, []);
 
   return (
-    <div className={styles.christmas}>
+    <div className={styles.container}>
       {/* <Header sticky={sticky ?? false} /> */}
       <Header sticky={true} />
       <div
         className={
-          styles.christmasStar
-          // Math.floor(Math.random() * 11) > 3 ? styles.building : styles.building
-        }
+          styles.building        }
       ></div>
-          <div
-        className={
-          styles.christmasStar2
-          // Math.floor(Math.random() * 11) > 3 ? styles.building : styles.building
-        }
-      ></div>
-      <div className={styles.banerContentChristmas}>
-        {/* <h3 className={styles.topHeader}>{t("common:top_header")}</h3> */}
-        {/* <div className={styles.divider}></div> */}
-        {/* <h1 className={styles.mainHeader}>
+      <div className={styles.banerContent}>
+        <h3 className={styles.topHeader}>{t("common:top_header")}</h3>
+        <div className={styles.divider}></div>
+        <h1 className={styles.mainHeader}>
           {router.locale === "en" ? (
             <>
               {" "}
@@ -50,10 +42,9 @@ useEffect(() => {
           ) : (
             <>{t("common:main_header2")}</>
           )}
-        </h1> */}
-        {/* <div className={styles.bottomHeader}>{t("common:bottom_header")}</div> */}
-        {/* style = contactButton */}
-        <button className={styles.contactButtonChrsitmas} onClick={()=>{ router.push({ pathname: '/kontakt' })}}>
+        </h1>
+        <div className={styles.bottomHeader}>{t("common:bottom_header")}</div>
+        <button className={styles.contactButton} onClick={()=>{ router.push({ pathname: '/kontakt' })}}>
           {t("common:contact_us")}
         </button>
       </div>

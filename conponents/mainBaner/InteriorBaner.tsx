@@ -29,7 +29,7 @@ const InteriorBaner = () => {
       <Header sticky={true} />
       <div className={styles.InteriorBanerContent}>
         <h1 className={clsx(styles.InteriorMainHeader, styles.InteriorHeader)}>
-          {t("Interior Design ")}
+          {t("Inredning ")}
         </h1>
         <button className={styles.InteriorButton}>{t("Kontakt")}</button>
       </div>

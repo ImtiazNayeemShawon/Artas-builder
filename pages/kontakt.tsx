@@ -40,14 +40,14 @@ const Contact: NextPage = () => {
            </div>
           <div className='contact-item'>
             <div className='contact-item-content'>
-            <h2>{t("contact:contact_header")}</h2>
+           
             {t("contact:contact_content")}
             <h2>{t("contact:adress")}</h2> 
              Näsbyvägen 2, 183 30 Täby 
             <h2>{t("contact:phone")}</h2> 
             <a href="tel:0702784918"> 0702784918</a>
            <h2> {t("contact:email")}</h2>
-            F<a href="mailto:biuro@artasbygg.com">biuro@artasbygg.com</a>
+            <a href="mailto:biuro@artasbygg.com">biuro@artasbygg.com</a>
             </div>
           </div>
           </div>
